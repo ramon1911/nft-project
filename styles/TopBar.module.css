@@ -1,0 +1,57 @@
+.container {
+    color: red;
+    position: absolute;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+}
+
+.rightContainer {
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    height: 100%;
+}
+
+.navContainer {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100px;
+    border: 2px solid red;
+}
+
+.midContainer {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+.leftContainer {
+    display: flex;
+    height: 100%;
+    padding: 25px;
+    align-items: center;
+    flex: 1;
+}
+
+.leftIconContainer {
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftIcon {
+    width: 100%;
+    height: 100%;
+    background-image: url("/earthicon.png");
+}
