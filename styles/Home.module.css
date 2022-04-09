@@ -10,8 +10,9 @@
 
 .saveContainer {
   order: 1;
-  background-color: red;
+  background-color: lightcoral;
   width: 100%;
+  min-width: 620px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +23,8 @@
   font-size: 8em;
   font-family: 'Courier New', Courier, monospace;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -63,8 +66,11 @@
 .nft {
   border-radius: 10px;
   border: 5px solid blue;
+  width: 100%;
   max-width: 450px;
-  max-height: 450px;
+  margin: 10px;
+  min-width: 250px;
+  object-fit: cover;
 }
 
 .backgroundUnder {
