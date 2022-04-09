@@ -1,6 +1,7 @@
 import { url } from 'inspector'
 import React from 'react'
 import styles from '../../styles/TopBar.module.css'
+import Link from 'next/link'
 
 export default class TopBar extends React.Component {
     render() {
@@ -9,7 +10,11 @@ export default class TopBar extends React.Component {
 
                 <div className = {styles.leftContainer}>
                     <div className = {styles.leftIconContainer} >
-                        <img className = {styles.leftIcon} src="/earthicon.png" />
+                        <Link href="/">
+                            <a>
+                                <img className = {styles.leftIcon} src="/earthicon.png" />
+                            </a>
+                        </Link>
                     </div>
                 </div>
                 <div className = {styles.midContainer}>
@@ -17,10 +22,14 @@ export default class TopBar extends React.Component {
                 </div>
                 <div className={styles.rightContainer}>
                     <div className = {styles.navContainer} >
-                        About
+                        <Link href="/about">
+                            <a>About</a>
+                        </Link>
                     </div>
                     <div className = {styles.navContainer} >
-                        Roadmap
+                    <Link href="/roadmap">
+                            <a>Roadmap</a>
+                        </Link>
                     </div>
                 </div>
             </div>

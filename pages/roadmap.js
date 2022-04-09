@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/About.module.css'
+import styles from '../styles/Roadmap.module.css'
 import TopBar from '../public/components/TopBar.tsx'
 
 export default function Home() {
