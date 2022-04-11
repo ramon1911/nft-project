@@ -2,37 +2,42 @@ import { url } from 'inspector'
 import React from 'react'
 import styles from '../../styles/TopBar.module.css'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-export default class TopBar extends React.Component {
-    render() {
+export default function TopBar() {
+
+        const router = useRouter();
+
         return(
-            <div className={styles.container}>
-
-                <div className = {styles.leftContainer}>
-                    <div className = {styles.leftIconContainer} >
-                        <Link href="/">
+                <div className={styles.topBarContainer}>
+                    <div className = {styles.leftContainer}>
+                        <div className = {styles.leftIconContainer} >
+                            <Link href="/">
+                                <a>
+                                    <img className = {styles.leftIcon} src="/earthicon.png" />
+                                </a>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className = {styles.midContainer}>
+                        - Save The World NFT -
+                    </div>
+                    <div className={styles.rightContainer}>
+                        <Link href="/about">
                             <a>
-                                <img className = {styles.leftIcon} src="/earthicon.png" />
+                                <div className = {router.pathname == "/about" ? styles.navContainerActive : styles.navContainer} >
+                                    <p> About </p>
+                                </div>
+                            </a>
+                        </Link>
+                        <Link href="/roadmap">
+                            <a>
+                                <div className = {router.pathname == "/roadmap" ? styles.navContainerActive : styles.navContainer} >
+                                    Roadmap
+                                </div>
                             </a>
                         </Link>
                     </div>
                 </div>
-                <div className = {styles.midContainer}>
-                    MidContainer
-                </div>
-                <div className={styles.rightContainer}>
-                    <div className = {styles.navContainer} >
-                        <Link href="/about">
-                            <a>About</a>
-                        </Link>
-                    </div>
-                    <div className = {styles.navContainer} >
-                    <Link href="/roadmap">
-                            <a>Roadmap</a>
-                        </Link>
-                    </div>
-                </div>
-            </div>
         )
-    }
 }

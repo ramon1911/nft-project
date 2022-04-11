@@ -16,24 +16,42 @@ export default function Home() {
       <TopBar />
 
       <div className = {styles.backgroundImage}>
-        <div className = {styles.saveContainer}>
-          <h1 className = {styles.saveText}> 
-            Save The
-            <span className={styles.worldContainer}>
-              <video className = {styles.textVideo} autoPlay loop >
-                <source src="globe.mp4" type="video/mp4" />
-              </video>
-            </span>
-          </h1>
-        </div>
-        <div className={styles.nftContainer}>
-          <div className={styles.nftBackground}>
-            <img className={styles.nft} src="SaveTheWorld.png" />
+        <div className = {styles.foreground} >
+          <div className = {styles.saveContainer}>
+            <div className = {styles.saveTextContainer} >
+              <h1 className = {styles.saveText}> 
+                Save The
+              </h1>
+            </div>
+            <div className = {styles.saveWorldContainer} >
+              <div className={styles.worldContainer}>
+                <video className = {styles.textVideo} autoPlay muted loop >
+                  <source src="Globe1080.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+          <div className={styles.nftContainer}>
+            <div className={styles.nftBackground}>
+              <img className={styles.nft} src="SaveTheWorld.png" />
+            </div>
           </div>
         </div>
       </div>
       <div className = {styles.backgroundUnder} >
-        Lerm ipsum
+        <div className = {styles.underTransition}>
+        </div>
+        <div className = {styles.underTitle} >
+          <h1>Our planet is struggling. Let&apos;s help it.</h1>
+        </div>
+        <div className = {styles.backgroundUnderContainer}>
+          <div className = {styles.underLeft} >
+
+          </div>
+          <div className = {styles.underRight} >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
       </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3617.47 693.466">
