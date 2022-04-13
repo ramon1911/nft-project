@@ -17,7 +17,14 @@ export default function Home() {
       <div className={styles.outerContainer} >
         <div className={styles.innerContainer} >
           <div className = {styles.titleContainer}>
-            <h1 className={styles.titleText}> Roadmap </h1> 
+            <h1 className={styles.titleText}> 
+            <span>R</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>m</span>
+            <span>A</span>
+            <span>P</span></h1> 
           </div>
           <div className = {styles.contentContainer}>
             POW   
