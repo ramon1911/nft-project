@@ -14,18 +14,17 @@ export default function Home() {
 
       <TopBar />
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <div className={styles.outerContainer} >
+        <div className={styles.innerContainer} >
+          <div className = {styles.titleContainer}>
+            <h1 className={styles.titleText}> Roadmap </h1> 
+          </div>
+          <div className = {styles.contentContainer}>
+            POW   
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }

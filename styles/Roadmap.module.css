@@ -1,6 +1,78 @@
+@font-face {
+    font-family: LCD;
+    src: url('../public/fonts/LCDM2B__.TTF');
+    src: url('../public/fonts/LCDM2L__.TTF');
+    src: url('../public/fonts/LCDM2N__.TTF');
+    font-weight: 200;
+    font-style: normal;
+}
+
 .container {
     background-color: black;
-    position: absolute;
     width:100%;
     height: 100%;
+    z-index: 3;
+}
+
+.outerContainer {    
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.innerContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 1px 1px white,
+                0px 0px 4px 4px cyan,
+                0px 0px 10px 10px blue,
+                inset 0px 0px 1px 1px white, 
+                inset 0px 0px 2px 2px cyan,
+                inset 0px 0px 10px 10px blue; 
+}
+
+.titleContainer {
+    position: relative;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-image: radial-gradient(rgba(255, 102, 0, 0.027),rgba(255, 72, 0, 0.61))
+}
+
+.titleContainer:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -3px;
+    background-color: white;
+}
+
+.titleText {
+    color: rgb(255, 60, 0);
+    font-family: LCD;
+    font-size: 90px;
+    text-shadow: 
+    0px 0px 3px rgb(255, 153, 0)
+    ,0px 0px 10px rgb(255, 60, 0);
+}
+
+.contentContainer {
+    width: 100%;
+    background-color: transparent;
+    color: white;
 }
