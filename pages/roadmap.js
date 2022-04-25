@@ -18,16 +18,43 @@ export default function Home() {
         <div className={styles.innerContainer} >
           <div className = {styles.titleContainer}>
             <h1 className={styles.titleText}> 
-            <span>R</span>
-            <span>O</span>
-            <span>A</span>
-            <span>D</span>
-            <span>m</span>
-            <span>A</span>
-            <span>P</span></h1> 
+            <span className = {styles.lR}>R</span>
+            <span className = {styles.lO}>O</span>
+            <span className = {styles.lA}>A</span>
+            <span className = {styles.lD}>D</span>
+            <span className = {styles.lM}>m</span>
+            <span className = {styles.la}>A</span>
+            <span className = {styles.lP}>P</span>
+            </h1> 
           </div>
           <div className = {styles.contentContainer}>
-            POW   
+            <div className = {styles.containerLeft} >
+              <div className = {styles.leftTop} >
+                0
+              </div>
+              V
+              <div className = {styles.leftBottom} >
+                100
+              </div>
+            </div>
+            <div className = {styles.containerRight} >
+              <div className = {styles.rightTop} >
+                <div className = {styles.pixContainer} >
+                  <img className={styles.pix} src="worldonfire.png" />
+                </div>
+                <div className = {styles.textContainer}> 
+                  At 0% assets sold, the initiative will have no access to funds, and will not be able to donate to environmental protection agenices. As a result, we will be helpless to environmental decay, and the world will continue to burn.
+                </div>
+              </div>
+              <div className = {styles.rightBottom} >
+              <div className = {styles.pixContainer} >
+                  <img className={styles.pix} src="worldsaved.png" />
+                </div>
+                <div className = {styles.textContainer}> 
+                  At 100% assets sold, the intiiative will have the funds necessary to donate to environmental protection agenices, and we can make the world a better place!
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

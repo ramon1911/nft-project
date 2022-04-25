@@ -161,11 +161,14 @@
 
 .backgroundUnderContainer {
   margin-bottom: 5%;
-  height: 500px;
   width: 90%;
   display: flex;
   position: relative;
   border: 1px solid #5f5f5f;
+}
+
+.pollVideo {
+  width: 100%;
 }
 
 .underLeft {

@@ -14,18 +14,17 @@ export default function Home() {
 
       <TopBar />
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <div className={styles.background}>
+        <div className={styles.foreground}>
+          <div className = {styles.titleBck}>
+            About Us
+          </div>
+          <div className = {styles.textBck} >
+            The Save the World NFT project is a global initiative with the intent to fix what current politicians have failed to address. Currently, the world continues to get more and more polluted by the day, with little action on the part of politicians and corporations to mitigate the growing risks. Save the World NFT project intends to harness the power of the people through selling NFTs to obtain funds necessary to donate to parties which will assist in clearing the earth of pollution.
+          </div>
+        </div>
+      </div> 
+
     </div>
   )
 }
