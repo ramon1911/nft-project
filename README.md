@@ -1,4 +1,4 @@
-##NFT Project 
+## NFT Project 
 
 ## How to install
   1. Install node.js
